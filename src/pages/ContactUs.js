@@ -17,7 +17,7 @@ const ContactUs = () => {
                 <Hide>
                     <Social variants={titleAnim}>
                         <Circle />
-                        <h2>Linked-in</h2>
+                        <h2>Linkedin</h2>
                     </Social>
                 </Hide>
                 <Hide>
@@ -42,11 +42,18 @@ const ContactStyle = styled(motion.div)`
     padding: 5rem 10rem;
     color: #353535;
     min-height: 90vh;
+    @media (max-width: 1300px){
+        padding: 2rem;
+        font-size: 1rem;
+    }
 `;
 
 const Title = styled.div`
     margin-bottom: 4rem;
     color: black;
+    @media (max-width: 1300px){
+        margin-top: 4rem;
+    }    
 `;
 
 const Hide = styled.div`
